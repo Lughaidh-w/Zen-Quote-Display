@@ -1,5 +1,7 @@
 # Motivational Images
 
-This project displays images with Zen Quote API.
+This project displays images from Zen Quote API.
 
-![Alt Text](assets/test.jpg)
+The image 
+
+![Alt Text](assets/dailyimage.jpg)
