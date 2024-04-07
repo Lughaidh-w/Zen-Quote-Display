@@ -16,10 +16,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '12.22.9'
+          node-version: '12'
 
       - name: Get New Image
-        run: node image_get.js
+        run: node scripts/image_get.js
 
       - run: npm install -g axios
       - run: npm install -g 
