@@ -2,6 +2,6 @@
 
 This project displays images from Zen Quote API.
 
-The image 
+The image is updated with GitHub Actions.
 
 ![Alt Text](assets/dailyimage.jpg)
