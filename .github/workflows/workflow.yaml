@@ -21,8 +21,9 @@ jobs:
       - name: Get New Image
         run: node scripts/image_get.js
 
-      - run: npm install -g axios
-      - run: npm install -g 
+      - name: Install libraries
+        run: npm install -g axios
+       
 
 
       - name: Commit New Image
