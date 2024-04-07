@@ -1,5 +1,13 @@
+// libraries
 const axios = require('axios');
 const fs = require('fs');
+
+
+// env
+require('dotenv').config();
+const apiKey = process.env.apiKey;
+
+console.log(apiKey)
 
 
 zen_url = "https://zenquotes.io/api/"
@@ -15,15 +23,14 @@ today = "https://zenquotes.io/api/today/"
 // random quote
 random = "https://zenquotes.io/api/random/"
 
-axios.get(random)
-  .then(response => {
-    // console.log(response.status);
-    console.log('Response data:', response.data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
+//axios.get(random)
+ // .then(response => {
+//    // console.log(response.status);
+//    console.log('Response data:', response.data);
+//  })
+//  .catch(error => {
+//    console.error('Error:', error);
+//  });
 
 // saves image to file
 axios({
@@ -31,9 +38,15 @@ axios({
   url: image_url,
   responseType: 'arraybuffer'
 })
-.then(function(response) {
-  fs.writeFileSync('test.jpg', response.data);
+.then(response => {
+  fs.writeFileSync('assets/dailyimage.jpg', response.data);
+
+  const image_res = response.data;
+
 })
-.catch(function(error) {
+.catch(error => {
   console.error('Error:', error);
 });
+
+
+
