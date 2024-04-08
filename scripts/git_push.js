@@ -10,7 +10,7 @@ const date_s = moment.tz('Europe/Dublin');
 // Define the Git commands
 const gitCommands = [
   'git add ../assets/dailyimage.jpg',
-  'git commit -m "testing commit"',
+  'git commit -m "push with js"',
   'git push origin master'
 ];
 

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source bash_parse.sh
+# not using parse right now
+#source scripts/bash_parse.sh
+#echo "path is $folder_path"
 
-echo "path is $folder_path"
-
-node image_get.js
+node scripts/image_get.js
 
 #node push_with_cron
 

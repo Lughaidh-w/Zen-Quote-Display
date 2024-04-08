@@ -15,7 +15,7 @@ axios({
   responseType: 'arraybuffer'
 })
 .then(response => {
-  fs.writeFileSync('../assets/dailyimage.jpg', response.data);
+  fs.writeFileSync('assets/dailyimage.jpg', response.data);
 
   // nothing is done with the image atm
   // const image_res = response.data;
