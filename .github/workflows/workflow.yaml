@@ -22,7 +22,7 @@ jobs:
         run: node scripts/image_get.js
 
       - name: Install libraries
-        run: npm install -g axios
+        run: npm install axios
        
 
 
