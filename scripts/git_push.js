@@ -15,7 +15,7 @@ exec(gitCommit);
 exec("git push origin master")
 
 
-// Execute the Git commands sequentially
+// Git commands in sequence
 exec("git add assets/dailyimage.jpg", (error, stdout, stderr) => {
   if (error) {
     console.error('Error adding file:', error);
@@ -23,7 +23,7 @@ exec("git add assets/dailyimage.jpg", (error, stdout, stderr) => {
   }
   console.log('File added successfully:', stdout);
   
-  // Execute the git commit command
+  // Git commit
   exec(gitCommit, (error, stdout, stderr) => {
     if (error) {
       console.error('Error committing changes:', error);
@@ -31,7 +31,7 @@ exec("git add assets/dailyimage.jpg", (error, stdout, stderr) => {
     }
     console.log('Changes committed successfully:', stdout);
     
-    // Execute the git push command
+    // Git push
     exec("git push origin master", (error, stdout, stderr) => {
       if (error) {
         console.error('Error pushing changes:', error);

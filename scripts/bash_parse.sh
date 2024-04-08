@@ -1,5 +1,7 @@
 #!/bin/bash
 
+### This file isn't used right now
+
 ENV_FILE="config/.env"
 
 # Parses .env
